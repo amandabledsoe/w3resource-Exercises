@@ -1,0 +1,6 @@
+C:\Users\abledsoe1\OneDrive - Knex\^Personal iDrive\Documents\Coding Projects\w3resource C# Coding Exercise\w3 Exercise 1-10\w3 Exercise 1-10\bin\Debug\w3 Exercise 1-10.exe.config
+C:\Users\abledsoe1\OneDrive - Knex\^Personal iDrive\Documents\Coding Projects\w3resource C# Coding Exercise\w3 Exercise 1-10\w3 Exercise 1-10\bin\Debug\w3 Exercise 1-10.exe
+C:\Users\abledsoe1\OneDrive - Knex\^Personal iDrive\Documents\Coding Projects\w3resource C# Coding Exercise\w3 Exercise 1-10\w3 Exercise 1-10\bin\Debug\w3 Exercise 1-10.pdb
+C:\Users\abledsoe1\OneDrive - Knex\^Personal iDrive\Documents\Coding Projects\w3resource C# Coding Exercise\w3 Exercise 1-10\w3 Exercise 1-10\obj\Debug\w3 Exercise 1-10.csprojResolveAssemblyReference.cache
+C:\Users\abledsoe1\OneDrive - Knex\^Personal iDrive\Documents\Coding Projects\w3resource C# Coding Exercise\w3 Exercise 1-10\w3 Exercise 1-10\obj\Debug\w3 Exercise 1-10.exe
+C:\Users\abledsoe1\OneDrive - Knex\^Personal iDrive\Documents\Coding Projects\w3resource C# Coding Exercise\w3 Exercise 1-10\w3 Exercise 1-10\obj\Debug\w3 Exercise 1-10.pdb
