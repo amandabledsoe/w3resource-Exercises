@@ -65,6 +65,11 @@ namespace w3_Exercise_31_40
             #endregion
             SegueSyntax();
             #region #32. Write a C# program to create a new string of four copies, taking last four characters from a given string. If the length of the given string is less than 4 return the original one.
+            Console.WriteLine("Give me a word atleast 4 letters long: ");
+            char[] userWord = Console.ReadLine().ToCharArray();
+            char lastLetter = userWord.Last();
+            string fourCopies = string.Format("{0}{1}{2}{3}", $"{lastLetter}", $"{lastLetter}", $"{lastLetter}", $"{lastLetter}");
+            Console.WriteLine($"{fourCopies}");
             #endregion
             SegueSyntax();
             #region #33. Write a C# program to check if a given positive number is a multiple of 3 or a multiple of 7.
@@ -91,6 +96,7 @@ namespace w3_Exercise_31_40
             #region #40. Write a C# program to check the nearest value of 20 of two given integers and return 0 if two numbers are same. 
             #endregion
             ProgramClose();
+            Environment.Exit(0);
         }
         #region General Methods
         public static void ProgramIntroduction()
