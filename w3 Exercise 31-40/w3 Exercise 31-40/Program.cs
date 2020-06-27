@@ -65,11 +65,24 @@ namespace w3_Exercise_31_40
             #endregion
             SegueSyntax();
             #region #32. Write a C# program to create a new string of four copies, taking last four characters from a given string. If the length of the given string is less than 4 return the original one.
-            Console.WriteLine("Give me a word atleast 4 letters long: ");
-            char[] userWord = Console.ReadLine().ToCharArray();
-            char lastLetter = userWord.Last();
-            string fourCopies = string.Format("{0}{1}{2}{3}", $"{lastLetter}", $"{lastLetter}", $"{lastLetter}", $"{lastLetter}");
-            Console.WriteLine($"{fourCopies}");
+            IntroduceExercise32();
+            bool makingCopies = true;
+            while(makingCopies)
+            {
+                Console.WriteLine("Give me a word atleast 4 letters long: ");
+                string userWord = Console.ReadLine();
+                if(userWord.Count()>=4)
+                {
+                    Console.WriteLine(GetLastLetterAndPrintCopiesForExercise32(userWord));
+                    makingCopies = false;
+                }
+                else
+                {
+                    Console.WriteLine("That's not 4 letters or more. Please try again.");
+                    Console.WriteLine("");
+                    makingCopies = true;
+                }
+            }
             #endregion
             SegueSyntax();
             #region #33. Write a C# program to check if a given positive number is a multiple of 3 or a multiple of 7.
@@ -166,6 +179,16 @@ namespace w3_Exercise_31_40
         }
         #endregion
         #region #32 Methods
+        public static void IntroduceExercise32()
+        {
+
+        }
+        public static string GetLastLetterAndPrintCopiesForExercise32(string userWord)
+        {
+            char lastLetter = userWord.Last();
+            string fourCopies = string.Format("{0}{1}{2}{3}", $"{lastLetter}", $"{lastLetter}", $"{lastLetter}", $"{lastLetter}");
+            return fourCopies;
+        }
         #endregion
         #region #33 Methods
         #endregion
