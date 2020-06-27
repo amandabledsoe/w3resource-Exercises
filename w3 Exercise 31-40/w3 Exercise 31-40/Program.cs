@@ -69,9 +69,9 @@ namespace w3_Exercise_31_40
             bool makingCopies = true;
             while(makingCopies)
             {
-                Console.WriteLine("Give me a word atleast 4 letters long: ");
+                Console.WriteLine("Give me a word that is at least 4 letters long: ");
                 string userWord = Console.ReadLine();
-                if(userWord.Count()>=4)
+                if(userWord.Count() >= 4)
                 {
                     Console.WriteLine(GetLastLetterAndPrintCopiesForExercise32(userWord));
                     makingCopies = false;
@@ -86,9 +86,45 @@ namespace w3_Exercise_31_40
             #endregion
             SegueSyntax();
             #region #33. Write a C# program to check if a given positive number is a multiple of 3 or a multiple of 7.
+            IntroduceExercise33();
+            bool checkingMultiples = true;
+            while(checkingMultiples)
+            {
+                Console.WriteLine("Give me a positive & whole number of your choice: ");
+                string userNumberInput = Console.ReadLine();
+                int userNumber;
+                bool isANumber = int.TryParse(userNumberInput, out userNumber);
+                if(isANumber)
+                {
+                    Console.WriteLine(CheckNumberMultiplesForExercise33(userNumber));
+                    checkingMultiples = false;
+                }
+                else
+                {
+                    Console.WriteLine("That's not a number, friend. Please try again.");
+                    checkingMultiples = true;
+                }
+            }
             #endregion
             SegueSyntax();
             #region #34. Write a C# program to check if a string starts with a specified word.
+            IntroduceExercise34();
+            bool checkingSentences = true;
+            while(checkingSentences)
+            {
+                Console.WriteLine("Go ahead, write out a sentence of your choice!");
+                string userSentence = Console.ReadLine();
+                if(userSentence.StartsWith("The"))
+                {
+                    Console.WriteLine("Your sentence DOES begin with the \"The\"!");
+                    checkingSentences = false;
+                }
+                else
+                {
+                    Console.WriteLine("Your sentence does NOT begin with \"The\".");
+                    checkingSentences = false;
+                }
+            }
             #endregion
             SegueSyntax();
             #region #35. Write a C# program to check two given numbers where one is less than 100 and other is greater than 200. 
@@ -163,7 +199,6 @@ namespace w3_Exercise_31_40
             }
             return -1;
         }
-
         public static int GetOddNumberChoiceForExercise31(string letter)
         {
             int[] evens = new int[5] { 1, 3, 5, 7, 9 };
@@ -181,7 +216,16 @@ namespace w3_Exercise_31_40
         #region #32 Methods
         public static void IntroduceExercise32()
         {
-
+            Console.WriteLine("--Exercise 32--");
+            Console.WriteLine("");
+            Console.WriteLine("In this example, we'll work with a word that you provide and I'll get the last letter of it.");
+            Console.WriteLine("Then, I'll take that letter and print it out 4 times.");
+            Console.WriteLine("");
+            Console.WriteLine("Ready?! Let's do this!");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue");
+            Console.ReadLine();
+            Console.Clear();
         }
         public static string GetLastLetterAndPrintCopiesForExercise32(string userWord)
         {
@@ -191,20 +235,97 @@ namespace w3_Exercise_31_40
         }
         #endregion
         #region #33 Methods
+        public static void IntroduceExercise33()
+        {
+            Console.WriteLine("--Exercise 33--");
+            Console.WriteLine("");
+            Console.WriteLine("In this example, we'll work with a number that you provide. The number must be a positive number.");
+            Console.WriteLine("Then, I'll let you know if the number is a multiple of 3 or 7 or neither.");
+            Console.WriteLine("");
+            Console.WriteLine("Ready?! Let's do this!");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue");
+            Console.ReadLine();
+            Console.Clear();
+        }
+        public static string CheckNumberMultiplesForExercise33(int userNumber)
+        {
+            if (userNumber < 0)
+            {
+                return "We asked for positive numbers, remember? Please try again";
+            }
+            else if (userNumber < 3)
+            {
+                return "The numbers 1 & 2 really don't work well for this exercise ... please try again.";
+            }
+            else if (userNumber % 3 == 0 && userNumber % 7 == 0)
+            {
+                return "Your number is a multiple of both 3 AND 7!";
+            }
+            else if (userNumber % 3 == 0)
+            {
+                return "Your number IS a multiple of 3!";
+            }
+            else if (userNumber % 7 == 0)
+            {
+                return "Your number IS a multiple of 7!";
+            }
+            else
+            {
+                return "That number isn't a multiple of either 3 or 7.";
+            }
+        }
         #endregion
         #region #34 Methods
+        public static void IntroduceExercise34()
+        {
+            Console.WriteLine("--Exercise 34--");
+            Console.WriteLine("");
+            Console.WriteLine("In this example, we'll work with a sentance you provide.");
+            Console.WriteLine("Then, I'll let you know if the sentance does or does not begin with the word \"The\".");
+            Console.WriteLine("");
+            Console.WriteLine("Ready?! Let's do this!");
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue");
+            Console.ReadLine();
+            Console.Clear();
+        }
         #endregion
         #region #35 Methods
+        public static void IntroduceExercise35()
+        {
+
+        }
         #endregion
         #region #36 Methods
+        public static void IntroduceExercise36()
+        {
+
+        }
         #endregion
         #region #37 Methods
+        public static void IntroduceExercise37()
+        {
+
+        }
         #endregion
         #region #38 Methods
+        public static void IntroduceExercise38()
+        {
+
+        }
         #endregion
         #region #39 Methods
+        public static void IntroduceExercise39()
+        {
+
+        }
         #endregion
         #region #40 Methods
+        public static void IntroduceExercise40()
+        {
+
+        }
         #endregion
     }
 }
